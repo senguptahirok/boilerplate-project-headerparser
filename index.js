@@ -25,7 +25,8 @@ app.get('/api/hello', function (req, res) {
 });
 
 app.get('/api/whoami',function(req,res){
-  res.json({"ipaddress": req.ip, "language": req.Accept-Language, "software": req.software});
+  console.log('language' + Accept-Language);
+  res.json({"ipaddress": req.ip, "language": Accept-Language, "software": software});
 });
 
 // listen for requests :)
